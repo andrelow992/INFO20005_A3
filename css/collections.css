@@ -1,0 +1,165 @@
+/* Base styles (Desktop / Surface Pro 7) */
+body {
+  background-color: #1f1f1f;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+}
+
+.product-header {
+  padding: 1rem;
+  background-color: #252525;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.menu-icon {
+  height: 24px;
+}
+
+.logo {
+  height: 32px;
+}
+
+.icons img {
+  height: 24px;
+  margin-left: 0.5rem;
+}
+
+.search-bar {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5dc;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  padding: 0.4rem;
+  outline: none;
+}
+
+.search-bar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search-bar img {
+  height: 18px;
+}
+
+.products-main {
+  padding: 1.5rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.product-grid {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  border-bottom: 0.5rem solid #f5f5dc;
+}
+
+.product-card {
+  background: #2e2e2e;
+  border-radius: 8px;
+  width: 220px;
+  flex: 0 0 auto;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.product-card .title {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.product-card .price {
+  color: #e0e0e0;
+  font-weight: 600;
+}
+
+.sale .price {
+  color: #b22222;
+}
+
+.sale-price {
+  color: #ff4a4a;
+  font-weight: bold;
+}
+
+
+.sale {
+  position: relative;
+}
+
+/* Responsive for iPhone 12 Pro (width ≤ 390px) */
+@media (max-width: 390px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-bar {
+    flex-direction: row;
+    padding: 0.4rem 0.8rem;
+    width: 90%;
+  }
+
+  .products-main {
+    padding: 1rem 0.8rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+
+  .product-grid {
+    gap: 0.7rem;
+  }
+
+  .product-card {
+    width: 150px;
+    padding: 0.4rem;
+  }
+
+  .product-card .title {
+    font-size: 0.8rem;
+  }
+
+  .product-card .price {
+    font-size: 0.85rem;
+  }
+
+  .sale-badge {
+    font-size: 0.6rem;
+    padding: 0.1rem 0.4rem;
+  }
+}
