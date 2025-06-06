@@ -26,8 +26,9 @@ body {
 /* Header */
 header {
   padding: 1rem;
-  border-bottom: 1rem solid #f5f5dc;
   background-color: #252525;
+  border-bottom: 1rem solid #f5f5dc;
+
 }
 
 .navbar-top {
@@ -46,9 +47,9 @@ header {
 
 .nav-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 6rem;
   list-style: none;
-  font-size: 1.5rem; /* Adjusted for better sizing */
+  font-size: 2rem; 
   margin: 0;
   padding: 0;
 }
@@ -66,8 +67,8 @@ header {
 }
 
 .nav-icons .icon {
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 /* Second row search bar */
@@ -105,14 +106,14 @@ header {
 }
 
 .search-bar img {
-  width: 18px;
-  height: 18px;
+  width: 40px;
+  height: 40px;
 }
 
 /* Hero Section */
 .hero {
   text-align: center;
-  margin: 2rem auto;
+  margin: 1rem auto;
   padding: 0 1rem;
 }
 
@@ -130,6 +131,8 @@ header {
   justify-content: center;
   gap: 2rem;
   padding: 2rem 1rem;
+  border-bottom: 1rem solid #f5f5dc;
+
 }
 
 .style-card {
@@ -152,7 +155,6 @@ header {
   padding: 1rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
-  border-bottom: 1rem solid #f5f5dc;
 }
 
 h2 {
@@ -167,11 +169,12 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   gap: 2rem;
   justify-content: center;
+  
 }
 
 .category-card {
   border-radius: 12px;
-  height: 200px;
+  height: 500px;
   width: 200px;
   overflow: hidden;
   display:flex;
@@ -192,29 +195,38 @@ h2 {
 
 /* Partners */
 #partners {
-  padding: 1rem 1rem;
+    margin-top: 1rem;
+  background-color: #f5f5dc;
   text-align: center;
 }
 
+#partners h2 {
+  font-size: 2rem;
+  color: #000;
+}
+
 .partner-logos {
-  margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 1rem;
-  padding-bottom: 0.5rem;
+  justify-content: center;
+  gap: 2rem; 
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .partner-logos img {
-  max-height: 70px;
+  height: 158px;
+  width: auto;
   object-fit: contain;
-  filter: grayscale(100%);
-  transition: filter 0.3s ease;
+  flex-shrink: 0;
 }
 
-.partner-logos img:hover {
-  filter: grayscale(0%);
-}
+
+
+
+
+
+
 
 /* Footer */
 .footer {
@@ -298,6 +310,11 @@ h2 {
 
 /* Responsive Adjustments */
 @media (max-width: 390px) {
+
+    .html{
+        font-size:18px;
+    }
+
   .navbar-top {
     flex-wrap: nowrap; /* Prevent wrapping */
     gap: 0.5rem;
@@ -329,35 +346,40 @@ h2 {
     max-width: 100%;
   }
 
-  .hero-image-wrapper {
-    width: 100vw;
-    height: auto;
-    padding: 0;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-  }
-
-  .hero-image-wrapper img {
-    width: 100%;
-    max-height: 70vh; /* Allow height expansion, but no overflow */
-    height: auto;
-    object-fit: contain;
-    display: block;
+  .search-bar img{
+    height: 30px;
+    width: 30px;
   }
 
   .hero {
+    margin-top: 1rem;
+    margin-left: 0;
+    padding: 0;
+    width: 100vw;
+  }
+
+  .hero-image-wrapper {
+    width: 100vw;
     margin: 0;
     padding: 0;
   }
 
+  .hero-image-wrapper img {
+    width: 100vw;
+    height: auto;
+    object-fit: cover; /* or contain depending on preference */
+    display: block;
+  }
+
+  
+
   .featured-styles {
   flex-wrap: nowrap;
-  overflow-x: auto;
   gap: 1rem;
-  padding: 1rem;
+  padding: 0.5rem;
   scroll-snap-type: x mandatory;
 }
+
 
 .style-card {
   flex: 0 0 auto;
@@ -374,7 +396,7 @@ h2 {
 .categories {
     padding: 0 1rem;      /* Add padding so grid items don't touch edges */
     gap: 1rem;            /* Slightly smaller gap for small screens */
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Smaller min width */
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Smaller min width */
     justify-content: start; /* Align left instead of center for better flow */
   }
 
@@ -391,16 +413,22 @@ h2 {
     object-fit: contain;  /* Avoid cropping, keep full image visible */
   }
 
-.partner-logos {
-    flex-wrap: nowrap;      
-    justify-content: center; 
-    gap: 0.8rem;
-    padding-bottom: 0.5rem;  
+  #partners h2 {
+  font-size: 1rem; 
+  margin-bottom: 0.3rem;
   }
 
-.partner-logos img {
-    max-height: 48px;        /* smaller logos on mobile */
-    }
+  .partner-logos {
+    flex-wrap: nowrap;         /* prevent wrapping */
+    overflow-x: auto;          /* allow horizontal scroll */
+    justify-content: start;    /* align logos left */
+    gap: 1rem;
+  }
+
+  .partner-logos img {
+    height: 40px;
+  }
+
 
 .footer {
     padding: 3rem 0.5rem 1rem;   /* reduce side padding */

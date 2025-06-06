@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cart / Checkout</title>
+  <link rel="stylesheet" href="css/cart.css" />
+</head>
+<body>
+  <header>
+  <!-- Top Row -->
+  <div class="navbar-top">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/images/logo.png" alt="Make My Piece" />
+      </a>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#">Sale</a></li>
+      <li><a href="Collections.html">Collections</a></li>
+    </ul>
+
+    <div class="nav-icons">
+      <a href="cart.html" aria-label="Cart">
+        <img src="assets/icons/cart.svg" alt="Cart" class="icon" />
+      </a>
+      <a href="#" aria-label="Account">
+        <img src="assets/icons/account.svg" alt="Account" class="icon" />
+      </a>
+    </div>
+  </div>
+
+  <!-- Second Row: Search -->
+  <div class="navbar-search">
+    <div class="search-bar">
+      <input type="text" placeholder="Search products..." />
+      <button type="submit">
+        <img src="assets/icons/search.svg" alt="Search" />
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="page-content">
+<main class="cart-container">
+    <h2>Cart</h2>
+
+    <div class="cart-item">
+      <img src="assets/images/cart1.png" alt="Product" />
+      <div class="item-details">
+        <p>Rattan Elegance Solid Wood Cane Bed Frame Rustic</p>
+        <p>$1,599.00</p>
+
+        <label>
+      <span class ="option-label">Size:</span>
+      <select>
+        <option>Single</option>
+        <option>Double</option>
+        <option>Queen</option>
+        <option>King</option>
+      </select>
+    </label>
+    <br />
+    <label>
+      <span class ="option-label">Color:</span>
+      <select>
+        <option>Natural</option>
+        <option>Walnut</option>
+        <option>Black</option>
+        <option>Whitewash</option>
+      </select>
+    </label>
+  </div>
+      <div class="quantity">
+        <button>-</button>
+        <input type="number" value="1" min="1" />
+        <button>+</button>
+      </div>
+    </div>
+
+    <div class="cart-item">
+      <img src="assets/images/cart2.png" alt="Product" />
+      <div class="item-details">
+        <p>French Arched Solid Wood Rustic King Sized Bed Natural</p>
+        <p>$2,699.00</p>
+        <label>
+      <span class ="option-label">Size:</span>
+      <select>
+        <option>Single</option>
+        <option>Double</option>
+        <option>Queen</option>
+        <option>King</option>
+      </select>
+    </label>
+    <br />
+    <label>
+      <span class ="option-label">Color:</span>
+      <select>
+        <option>Natural</option>
+        <option>Walnut</option>
+        <option>Black</option>
+        <option>Whitewash</option>
+      </select>
+    </label>
+  </div>
+      <div class="quantity">
+        <button>-</button>
+        <input type="number" value="1" min="1" />
+        <button>+</button>
+      </div>
+    </div>
+
+    <!-- Accordion Sections -->
+   <div class="accordion">
+      <!-- Review -->
+      <div class="accordion-item">
+        <button class="accordion-toggle">Review</button>
+        <div class="accordion-content">
+          <p><strong>Items in Cart:</strong> 2</p>
+          <p><strong>Total:</strong> $4,298.00</p>
+          <p><strong>Expected Delivery:</strong> 5–7 business days</p>
+        </div>
+      </div>
+
+      <!-- Billing -->
+      <div class="accordion-item">
+        <button class="accordion-toggle">Billing Option</button>
+        <div class="accordion-content">
+          <label><input type="radio" name="billing" /> Credit Card</label><br />
+          <label><input type="radio" name="billing" /> PayPal</label><br />
+          <label><input type="radio" name="billing" /> AfterPay</label>
+
+          <div class="form-grid">
+            <input type="text" placeholder="Card Number" />
+            <input type="text" placeholder="Cardholder Name" />
+            <input type="text" placeholder="Expiry Date (MM/YY)" />
+            <input type="text" placeholder="CVV" />
+            <input type="text" placeholder="Email Address" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Shipping Option -->
+      <div class="accordion-item">
+        <button class="accordion-toggle">Shipping Option</button>
+        <div class="accordion-content">
+          <label><input type="radio" name="shipping" /> Standard (Free - 5 to 7 days)</label><br />
+          <label><input type="radio" name="shipping" /> Express ($50 - 2 to 3 days)</label><br />
+          <label><input type="radio" name="shipping" /> Priority ($100 - Next day)</label>
+        </div>
+      </div>
+
+      <!-- Shipping Address -->
+      <div class="accordion-item">
+        <button class="accordion-toggle">Shipping Address</button>
+        <div class="accordion-content">
+          <div class="form-grid">
+            <input type="text" placeholder="Address Line 1" />
+            <input type="text" placeholder="Address Line 2" />
+            <input type="text" placeholder="Zip" />
+            <input type="text" placeholder="Suburb" />
+            <input type="text" placeholder="State" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="confirm-btn">Confirm</button>
+  </main>
+
+  <!-- Confirmation Overlay -->
+<div id="confirmation-overlay">
+  <div class="overlay-content">
+    <p>Your order has been placed.<br />A receipt has been sent to your email.<br />Thank you.</p>
+    <button id="close-overlay">Close</button>
+  </div>
+</div>
+</div>
+
+
+  <script src="js/cart.js"></script>
+</body>
+</html>

@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Products</title>
-  <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/collections.css" />
 </head>
 <body>
@@ -18,7 +17,7 @@
     </div>
 
     <ul class="nav-links">
-      <li><a href="#">Sale</a></li>
+      <li><a href="Collections.html">Sale</a></li>
       <li><a href="Collections.html">Collections</a></li>
     </ul>
 
@@ -32,96 +31,166 @@
     </div>
   </div>
 
-  <!-- Second Row: Search -->
-  <div class="navbar-search">
-    <div class="search-bar">
-      <input type="text" placeholder="Search products..." />
-      <button type="submit">
-        <img src="assets/icons/search.svg" alt="Search" />
-      </button>
-    </div>
+ <!-- Second Row: Search -->
+<div class="navbar-search">
+  <div class="search-bar">
+    <input type="text" placeholder="Beds" />
+    <button type="button" onclick="window.location.href='filter.html';">
+      <img src="assets/icons/search.svg" alt="Search" />
+    </button>
   </div>
+</div>
 </header>
 
 
   <main class="products-main">
-    <section>
-      <h2>Top Sellers</h2>
-      <div class="product-grid">
-        <div class="product-card">
-          <img src="assets/images/top_seller1.png" alt="Bed" />
-          <p class="title">French Arched Solid Wood Rustic King Sized Bed</p>
-          <p class="price">$2,699.00</p>
-        </div>
-        <div class="product-card">
-          <img src="assets/images/top_seller2.png" alt="Cabinet" />
-          <p class="title">Salvage Reclaimed Wooden Rustic Cabinet</p>
-          <p class="price">$899.00</p>
-        </div>
-        <div class="product-card">
-          <img src="assets/images/top_seller3.png" alt="Cabinet" />
-          <p class="title">Salvage Reclaimed Wooden Rustic Cabinet</p>
-          <p class="price">$799.00</p>
-        </div>
-        <div class="product-card">
-          <img src="assets/images/top_seller3.png" alt="Cabinet" />
-          <p class="title">Salvage Reclaimed Wooden Rustic Cabinet</p>
-          <p class="price">$799.00</p>
-        </div>
-      </div>
-    </section>
+    <!-- Top Sellers -->
+<section>
+  <h2>Top Sellers</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <a href="product.html">
+        <img src="assets/images/top_seller1.png" alt="Bed" />
+      </a>
+      <p class="title">French Arched Solid Wood Rustic King Sized Bed</p>
+      <p class="price">$2,699.00</p>
+    </div>
+    <div class="product-card">
+      <a href="product.html">
+        <img src="assets/images/top_seller2.png" alt="Cabinet" />
+      </a>
+      <p class="title">Salvage Reclaimed Wooden Rustic Cabinet</p>
+      <p class="price">$899.00</p>
+    </div>
+    <div class="product-card">
+      <a href="product.html">
+        <img src="assets/images/top_seller3.png" alt="Cabinet" />
+      </a>
+      <p class="title">Salvage Reclaimed Wooden Rustic Cabinet</p>
+      <p class="price">$799.00</p>
+    </div>
+    <div class="product-card">
+      <a href="product.html">
+        <img src="assets/images/top_seller3.png" alt="Cabinet" />
+      </a>
+      <p class="title">Salvage Reclaimed Wooden Rustic Cabinet</p>
+      <p class="price">$799.00</p>
+    </div>
+    <div class="product-card">
+      <a href="product.html">
+        <img src="assets/images/top_seller2.png" alt="Cabinet" />
+      </a>
+      <p class="title">Salvage Reclaimed Wooden Rustic Cabinet</p>
+      <p class="price">$899.00</p>
+    </div>
+    <div class="product-card">
+      <a href="product.html">
+        <img src="assets/images/top_seller1.png" alt="Bed" />
+      </a>
+      <p class="title">French Arched Solid Wood Rustic King Sized Bed</p>
+      <p class="price">$2,699.00</p>
+    </div>
+  </div>
+</section>
 
-    <section>
-      <h2>On Sale</h2>
-      <div class="product-grid">
-        <div class="product-card sale">
-          <img src="assets/images/sale1.png" alt="Mango Cabinet" />
-          <p class="title">Rustica Handmade Solid Mango Wood Cabinet</p>
-          <p class="price"><s>$399.99</s> <span class="sale-price">$359.99</span></p>
-        </div>
-        <div class="product-card sale">
-          <img src="assets/images/sale2.png" alt="Indian Cabinet" />
-          <p class="title">Indian Handmade Carved Wooden Cabinet</p>
-          <p class="price"><s>$1099.99</s> <span class="sale-price">$799.99</span></p>
-        </div>
-        <div class="product-card sale">
-          <img src="assets/images/sale3.png" alt="Mango Classic" />
-          <p class="title">Mango Classic Handmade Solid Wood Cabinet</p>
-          <p class="price"><s>$1399.99</s> <span class="sale-price">$1099.99</span></p>
-        </div>
-        <div class="product-card sale">
-          <img src="assets/images/sale3.png" alt="Mango Classic" />
-          <p class="title">Mango Classic Handmade Solid Wood Cabinet</p>
-          <p class="price"><s>$1399.99</s> <span class="sale-price">$1099.99</span></p>
-        </div>
-      </div>
-    </section>
+<!-- On Sale -->
+<section>
+  <h2>On Sale</h2>
+  <div class="product-grid">
+    <div class="product-card sale">
+      <a href="product.html">
+        <img src="assets/images/sale1.png" alt="Mango Cabinet" />
+      </a>
+      <p class="title">Rustica Handmade Solid Mango Wood Cabinet</p>
+      <p class="price"><s>$399.99</s> <span class="sale-price">$359.99</span></p>
+    </div>
+    <div class="product-card sale">
+      <a href="product.html">
+        <img src="assets/images/sale2.png" alt="Indian Cabinet" />
+      </a>
+      <p class="title">Indian Handmade Carved Wooden Cabinet</p>
+      <p class="price"><s>$1099.99</s> <span class="sale-price">$799.99</span></p>
+    </div>
+    <div class="product-card sale">
+      <a href="product.html">
+        <img src="assets/images/sale3.png" alt="Mango Classic" />
+      </a>
+      <p class="title">Mango Classic Handmade Solid Wood Cabinet</p>
+      <p class="price"><s>$1399.99</s> <span class="sale-price">$1099.99</span></p>
+    </div>
+    <div class="product-card sale">
+      <a href="product.html">
+        <img src="assets/images/sale3.png" alt="Mango Classic" />
+      </a>
+      <p class="title">Mango Classic Handmade Solid Wood Cabinet</p>
+      <p class="price"><s>$1399.99</s> <span class="sale-price">$1099.99</span></p>
+    </div>
+    <div class="product-card sale">
+      <a href="product.html">
+        <img src="assets/images/sale2.png" alt="Indian Cabinet" />
+      </a>
+      <p class="title">Indian Handmade Carved Wooden Cabinet</p>
+      <p class="price"><s>$1099.99</s> <span class="sale-price">$799.99</span></p>
+    </div>
+    <div class="product-card sale">
+      <a href="product.html">
+        <img src="assets/images/sale1.png" alt="Mango Cabinet" />
+      </a>
+      <p class="title">Rustica Handmade Solid Mango Wood Cabinet</p>
+      <p class="price"><s>$399.99</s> <span class="sale-price">$359.99</span></p>
+    </div>
+  </div>
+</section>
 
-    <section>
-      <h2>Featured</h2>
-      <div class="product-grid">
-        <div class="product-card">
-          <img src="assets/images/featured1.png" alt="Bed" />
-          <p class="title">French Arched Solid Wood Rustic King Sized Bed</p>
-          <p class="price">$2,699.00</p>
-        </div>
-        <div class="product-card">
-          <img src="assets/images/featured2.png" alt="Cabinet" />
-          <p class="title">Salvage Reclaimed Wooden Rustic Cabinet</p>
-          <p class="price">$899.00</p>
-        </div>
-        <div class="product-card">
-          <img src="assets/images/featured3.png" alt="Cabinet" />
-          <p class="title">Salvage Reclaimed Wooden Rustic Cabinet</p>
-          <p class="price">$799.00</p>
-        </div>
-        <div class="product-card">
-          <img src="assets/images/featured2.png" alt="Cabinet" />
-          <p class="title">Salvage Reclaimed Wooden Rustic Cabinet</p>
-          <p class="price">$899.00</p>
-        </div>
-      </div>
-    </section>
+<!-- Featured -->
+<section>
+  <h2>Featured</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <a href="product.html">
+        <img src="assets/images/featured1.png" alt="Bed" />
+      </a>
+      <p class="title">French Arched Solid Wood Rustic King Sized Bed</p>
+      <p class="price">$2,699.00</p>
+    </div>
+    <div class="product-card">
+      <a href="product.html">
+        <img src="assets/images/featured2.png" alt="Cabinet" />
+      </a>
+      <p class="title">Salvage Reclaimed Wooden Rustic Cabinet</p>
+      <p class="price">$899.00</p>
+    </div>
+    <div class="product-card">
+      <a href="product.html">
+        <img src="assets/images/featured3.png" alt="Cabinet" />
+      </a>
+      <p class="title">Salvage Reclaimed Wooden Rustic Cabinet</p>
+      <p class="price">$799.00</p>
+    </div>
+    <div class="product-card">
+      <a href="product.html">
+        <img src="assets/images/featured2.png" alt="Cabinet" />
+      </a>
+      <p class="title">Salvage Reclaimed Wooden Rustic Cabinet</p>
+      <p class="price">$899.00</p>
+    </div>
+    <div class="product-card">
+      <a href="product.html">
+        <img src="assets/images/featured2.png" alt="Cabinet" />
+      </a>
+      <p class="title">Salvage Reclaimed Wooden Rustic Cabinet</p>
+      <p class="price">$899.00</p>
+    </div>
+    <div class="product-card">
+      <a href="product.html">
+        <img src="assets/images/featured1.png" alt="Bed" />
+      </a>
+      <p class="title">French Arched Solid Wood Rustic King Sized Bed</p>
+      <p class="price">$2,699.00</p>
+    </div>
+  </div>
+</section>
+
   </main>
 </body>
 </html>

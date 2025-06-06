@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Page</title>
+  <link rel="stylesheet" href="css/product.css" />
+</head>
+<body>
+  <header>
+  <!-- Top Row -->
+  <div class="navbar-top">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/images/logo.png" alt="Make My Piece" />
+      </a>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#">Sale</a></li>
+      <li><a href="Collections.html">Collections</a></li>
+    </ul>
+
+    <div class="nav-icons">
+      <a href="cart.html" aria-label="Cart">
+        <img src="assets/icons/cart.svg" alt="Cart" class="icon" />
+      </a>
+      <a href="#" aria-label="Account">
+        <img src="assets/icons/account.svg" alt="Account" class="icon" />
+      </a>
+    </div>
+  </div>
+
+ <!-- Second Row: Search -->
+<div class="navbar-search">
+  <div class="search-bar">
+    <input type="text" placeholder="Beds" />
+    <button type="button" onclick="window.location.href='filter.html';">
+      <img src="assets/icons/search.svg" alt="Search" />
+    </button>
+  </div>
+</div>
+</header>
+
+  
+  <main>
+    <section class="product-details">
+      <div class="image-gallery">
+        <div class="main-image">
+          <img src="assets/images/product1.png" alt="Main Bed" />
+        </div>
+        <div class="thumbnail-row">
+          <img src="assets/images/product2.png" />
+          <img src="assets/images/product3.png" />
+          <img src="assets/images/product4.png" />
+          <img src="assets/images/product5.png" />
+        </div>
+      </div>
+      <div class="info">
+        <h1>FRENCH ARCHED SOLID WOOD RUSTIC KING SIZED BED NATURAL</h1>
+        <div class="rating">
+          <span>⭐⭐⭐⭐⭐</span>
+          <span class="score">5.0</span>
+        </div>
+        <div class="price">$2699.99</div>
+
+        <div class="colors">
+          <label>COLOUR</label>
+          <div class="color-swatches">
+            <div class="swatch" style="background:#F5F5F5;"></div>
+            <div class="swatch" style="background:#FFFFFF;"></div>
+          </div>
+        </div>
+
+        <label for="quantity">QUANTITY: </label>
+        <select id="quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="2">3</option>
+          <option value="2">4</option>
+          <option value="2">5</option>
+        </select>
+
+        <button class="add-to-cart">ADD TO CART</button>
+
+        <div class="accordions">
+            <details>
+    <summary>DESCRIPTION</summary>
+    <p>
+      The French Arched Solid Wood Rustic King Bed combines timeless design with durable craftsmanship, made from premium acacia wood and finished in a rich dark brown. Its low-profile, platform style adds modern elegance, while the eco-friendly materials and sturdy construction ensure long-lasting comfort and style. Assembly is simple with included instructions.
+    </p>
+  </details>
+  <details>
+    <summary>Additional Information</summary>
+    <p>Please note that accessories shown in images are for representation only and not included with the product. Due to natural variations in wood grain, hand-painted details, and screen settings, slight differences in color, texture, and finish may occur. We work with a variety of premium materials including natural woods like Mango, Sheesham, Teak, and Acacia, offering finishes from natural to custom stains.</p>
+  </details>
+  <details>
+    <summary>SPECIFICATIONS</summary>
+    <ul>
+      <li>Material: Solid Natural Wood</li>
+      <li>Finish: Rustic Natural Finish</li>
+      <li>Bed Size: King</li>
+      <li>Assembly Required: Yes</li>
+      <li>Warranty: 2 years</li>
+      <li>Length: 210 cm</li>
+      <li>Width: 180 cm</li>
+      <li>Height: 120 cm</li>
+      <li>Weight: 85 kg</li>
+    </ul>
+  </details>
+  <details>
+    <summary>SHIPPING & RETURNS</summary>
+    <p>
+      We accept returns and exchanges within 14 days of purchase, provided items are unused, in original packaging, and in the same condition as received, with proof of purchase. If the return is due to our error, we’ll cover the return shipping costs. Refunds are processed to the original payment method within 5 business days after inspection and approval. We ship across Australia, with delivery times ranging from 5–14 business days, and shipping costs are calculated at checkout based on order size and destination.
+    </p>
+  </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="similar-products">
+  <h2>SIMILAR PRODUCTS</h2>
+  <div class="products">
+    <div class="product">
+      <img src="assets/images/similar1.png" alt="Rattan Elegance Bed" />
+      <p class="name">Rattan Elegance Solid Wood Cane Bed Frame Rustic</p>
+      <p class="price">$2,699.00</p>
+      <p class="stars">★★★★☆</p>
+    </div>
+    <div class="product">
+      <img src="assets/images/similar2.png" alt="Rustic Black Bed" />
+      <p class="name">The Gileteen Solid Wood King Sized Bed in Rustic Black</p>
+      <p class="price">$2,499.00</p>
+      <p class="stars">★★★☆☆</p>
+    </div>
+    <div class="product">
+      <img src="assets/images/similar3.png" alt="Rustic White Bed" />
+      <p class="name">The Gileteen Solid Wood King Sized Bed in Rustic White</p>
+      <p class="price">$2,699.00</p>
+      <p class="stars">★★★☆☆</p>
+    </div>
+    <div class="product">
+      <img src="assets/images/similar4.png" alt="Natural Bed 04" />
+      <p class="name">The Gileteen Solid Wood King Sized Bed Natural 04</p>
+      <p class="price">$2,699.00</p>
+      <p class="stars">★★★★☆</p>
+    </div>
+  </div>
+</section>
+
+  </main>
+</body>
+</html>

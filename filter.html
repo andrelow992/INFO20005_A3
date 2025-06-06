@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Filter Results - Make My Piece</title>
+  <link rel="stylesheet" href="css/filter.css" />
+</head>
+<body>
+  <header>
+  <!-- Top Row -->
+  <div class="navbar-top">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/images/logo.png" alt="Make My Piece" />
+      </a>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#">Sale</a></li>
+      <li><a href="Collections.html">Collections</a></li>
+    </ul>
+
+    <div class="nav-icons">
+      <a href="cart.html" aria-label="Cart">
+        <img src="assets/icons/cart.svg" alt="Cart" class="icon" />
+      </a>
+      <a href="#" aria-label="Account">
+        <img src="assets/icons/account.svg" alt="Account" class="icon" />
+      </a>
+    </div>
+  </div>
+
+  <!-- Second Row: Search -->
+  <div class="navbar-search">
+    <div class="search-bar">
+      <input type="text" placeholder="Search products..." />
+      <button type="submit">
+        <img src="assets/icons/search.svg" alt="Search" />
+      </button>
+    </div>
+  </div>
+</header>
+
+  <main class="main-content">
+  <!-- Mobile Filter Toggle Button -->
+  <button class="filter-toggle" onclick="toggleFilter()">Filter ▾</button>
+
+  <!-- Filter Sidebar / Dropdown -->
+  <div class ="filter-layout">
+  <aside class="filter-sidebar" id="filterSidebar">
+    <h3>Filter</h3>
+    <div class = "filter-groups-container">
+        <div class="filter-group">
+            <p>Size</p>
+            <label><input type="checkbox" /> King</label>
+            <label><input type="checkbox" /> Queen</label>
+            <label><input type="checkbox" /> Single</label>
+        </div>
+        
+        <div class="filter-group">
+            <p>Price</p>
+            <input type="range" min="0" max="8000" />
+        </div>
+        
+        <div class="filter-group">
+            <p>Color</p>
+            <div class="color-dots">
+                <span class="dot red"></span>
+                <span class="dot blue"></span>
+                <span class="dot green"></span>
+                <span class="dot yellow"></span>
+                <span class="dot magenta"></span>
+            </div>
+        </div>
+        
+        
+        <div class="filter-group">
+            <p>Material</p>
+            <label><input type="checkbox" /> Oak</label>
+            <label><input type="checkbox" /> Walnut</label>
+            <label><input type="checkbox" /> Mahogany</label>
+        </div>
+    </div>
+</div>
+</aside>
+
+
+
+    <section class="product-section">
+      <h2>Results for “Bedding”</h2>
+      <div class="product-grid">
+        <!-- Repeat product-card block -->
+        <div class="product-card">
+  <a href="product.html">
+    <img src="assets/images/bed1.png" alt="Product" />
+  </a>
+  <p class="title">French Arched Solid Wood Rustic King Sized Bed Natural</p>
+  <p class="price">$2,699.00</p>
+</div>
+<div class="product-card">
+  <a href="product.html">
+    <img src="assets/images/bed2.png" alt="Product" />
+  </a>
+  <p class="title">The Gileete Solid Wood Upholstered Boucle King Bed</p>
+  <p class="price">$1,599.00</p>
+</div>
+
+<div class="product-card">
+  <a href="product.html">
+    <img src="assets/images/bed3.png" alt="Product" />
+  </a>
+  <p class="title">French Arched Solid Wood Rustic King Sized Bed Natural</p>
+  <p class="price">$2,699.00</p>
+</div>
+<div class="product-card">
+  <a href="product.html">
+    <img src="assets/images/bed4.png" alt="Product" />
+  </a>
+  <p class="title">The Gileete Solid Wood Upholstered Boucle King Bed</p>
+  <p class="price">$1,599.00</p>
+</div>
+
+<div class="product-card">
+  <a href="product.html">
+    <img src="assets/images/bed5.png" alt="Product" />
+  </a>
+  <p class="title">French Arched Solid Wood Rustic King Sized Bed Natural</p>
+  <p class="price">$2,699.00</p>
+</div>
+<div class="product-card">
+  <a href="product.html">
+    <img src="assets/images/bed6.png" alt="Product" />
+  </a>
+  <p class="title">The Gileete Solid Wood Upholstered Boucle King Bed</p>
+  <p class="price">$1,599.00</p>
+</div>
+
+<div class="product-card">
+  <a href="product.html">
+    <img src="assets/images/bed8.png" alt="Product" />
+  </a>
+  <p class="title">French Arched Solid Wood Rustic King Sized Bed Natural</p>
+  <p class="price">$2,699.00</p>
+</div>
+<div class="product-card">
+  <a href="product.html">
+    <img src="assets/images/bed9.png" alt="Product" />
+  </a>
+  <p class="title">The Gileete Solid Wood Upholstered Boucle King Bed</p>
+  <p class="price">$1,599.00</p>
+</div>
+
+
+      </div>
+    </section>
+  </main>
+</body>
+
+<script src="js/filter.js"></script>
+
+</html>
