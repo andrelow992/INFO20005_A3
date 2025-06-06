@@ -7,8 +7,9 @@ body {
 
 header {
   padding: 1rem;
-  border-bottom: 1rem solid #f5f5dc;
   background-color: #252525;
+  border-bottom: 1rem solid #f5f5dc;
+
 }
 
 .navbar-top {
@@ -27,9 +28,9 @@ header {
 
 .nav-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 6rem;
   list-style: none;
-  font-size: 1.5rem; /* Adjusted for better sizing */
+  font-size: 2rem; 
   margin: 0;
   padding: 0;
 }
@@ -47,8 +48,8 @@ header {
 }
 
 .nav-icons .icon {
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 /* Second row search bar */
@@ -244,6 +245,10 @@ select {
 @media (max-width: 390px) {
     html {
     font-size: 16px;
+  }
+
+  header{
+    border-bottom: 0.5rem solid #f5f5dc;
   }
 
   .navbar-top {

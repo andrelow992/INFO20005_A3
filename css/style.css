@@ -42,7 +42,7 @@ header {
 }
 
 .logo img {
-  height: 40px;
+  height: 50px;
 }
 
 .nav-links {
@@ -174,7 +174,7 @@ h2 {
 
 .category-card {
   border-radius: 12px;
-  height: 500px;
+  height: 300px;
   width: 200px;
   overflow: hidden;
   display:flex;
@@ -315,6 +315,10 @@ h2 {
         font-size:18px;
     }
 
+    header{
+          border-bottom: 0.5rem solid #f5f5dc;
+    }
+
   .navbar-top {
     flex-wrap: nowrap; /* Prevent wrapping */
     gap: 0.5rem;
@@ -378,6 +382,7 @@ h2 {
   gap: 1rem;
   padding: 0.5rem;
   scroll-snap-type: x mandatory;
+  border-bottom: 0.5rem solid #f5f5dc;
 }
 
 

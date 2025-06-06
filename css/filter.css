@@ -13,8 +13,9 @@ body {
 
 header {
   padding: 1rem;
-  border-bottom: 1rem solid #f5f5dc;
   background-color: #252525;
+  border-bottom: 1rem solid #f5f5dc;
+
 }
 
 .navbar-top {
@@ -28,14 +29,14 @@ header {
 }
 
 .logo img {
-  height: 2.5rem;
+  height: 40px;
 }
 
 .nav-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 6rem;
   list-style: none;
-  font-size: 1.2rem;
+  font-size: 2rem; 
   margin: 0;
   padding: 0;
 }
@@ -53,10 +54,11 @@ header {
 }
 
 .nav-icons .icon {
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
 }
 
+/* Second row search bar */
 .navbar-search {
   max-width: 1200px;
   margin: 1rem auto 0;
@@ -94,7 +96,6 @@ header {
   width: 40px;
   height: 40px;
 }
-
 .main-content {
   display: flex;
   padding-right: 1.5rem;
@@ -129,9 +130,7 @@ header {
 }
 
 .filter-sidebar {
-  min-height: 100vh;
   width: 250px;
-  border-right: 1rem solid #f5f5dc;
   font-size: 1rem;
   
 }
@@ -183,6 +182,7 @@ header {
 
 .product-section {
   flex: 1;
+  border-left: 1rem solid #f5f5dc;
 }
 
 .product-section h2 {
@@ -223,6 +223,10 @@ header {
 @media (max-width: 390px) {
   html {
     font-size: 16px;
+  }
+
+  header{
+    border-bottom: 0.5rem solid #f5f5dc;
   }
 
   .navbar-top {
@@ -271,7 +275,7 @@ header {
   .filter-sidebar {
     display: none;
     width: 95%;
-    height: 30vh;
+    height: auto;
     padding: 0.75rem 1rem;
     background-color: #2e2e2e;
     border: 0.5rem solid #f5f5dc;
@@ -310,7 +314,8 @@ header {
 
   .page-layout {
   display: flex;
-  height: 100vh; 
+  flex-direction: column;
+  height: auto;
 }
 
   .color-dots {
@@ -331,6 +336,10 @@ header {
   .product-card .price {
     font-size: 0.9rem;
   }
+
+  .product-section {
+  border-left: 0rem solid #f5f5dc;
+}
 
   .product-section h2 {
     font-size: 1.25rem;
