@@ -327,16 +327,16 @@ select, input[type="number"], button {
     font-size: 15px;
   }
 
-  header{
-    border-bottom: 0.5rem solid #f5f5dc;
-  }
-
   .body{
     padding: 0.75rem;
   }
 
+  header {
+        border-bottom: 0.5rem solid #f5f5dc;
+    }
+
   .navbar-top {
-    flex-wrap: nowrap;
+    flex-wrap: nowrap; /* Prevent wrapping */
     gap: 0.5rem;
     justify-content: space-between;
   }
